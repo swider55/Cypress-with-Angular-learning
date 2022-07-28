@@ -1,3 +1,24 @@
+# Część dotycząca tylko cypressa
+
+## Kroki jakie trzeba zrobić na początku
+ - upewnić się, że spełniamy wszytkie wymagania z https://docs.cypress.io/guides/getting-started/installing-cypress#System-requirements, oraz, czy 
+   są zainstalowane wszytki dodatkowe paczki, np. dla Debiana, trzeba puścić dodatkową komendę
+   `apt-get install libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb`
+ - Jeżeli wszystko jest przygotowane, to przechodzimy do ścieżki naszego projektu
+       `cd /your/project/path`
+ - Upewniamy się, czy mamy folder `node_modules`, jak nie to puścić komendę `npm i`
+ - Puszczamy komendę `npm install cypress --save-dev`, flaga sprawi, że cypress doda nam się tylko w trybie dev
+ - Aby odpalić GUI cypress, trzeba wpisać `npx cypress open`, npx jest domyślnie w npm
+ - w ten sposób stworzy się folder cypress, z features i support
+ - Gdy wszytko poprawnie przeklikamy w GUI cypressa, to stworzy nam się dodatkow folder e2e
+
+## Więcej szczegółówna
+ - https://docs.cypress.io/guides/getting-started/installing-cypress#What-you-ll-learn
+ - https://docs.cypress.io/guides/getting-started/opening-the-app#Adding-npm-Scripts
+ - https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test
+ 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 # CypressWithAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
