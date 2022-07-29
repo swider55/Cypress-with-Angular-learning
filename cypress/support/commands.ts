@@ -35,3 +35,24 @@
 //     }
 //   }
 // }
+
+
+
+
+declare namespace Cypress {
+  interface Chainable {
+    seedAndVisit(seedData:string): void
+  }
+}
+
+Cypress.Commands.add("seedAndVisit", (seedData:string = 'fixture:todos') => {
+  cy.server()
+  //wyjaśnienie trzeciego parametru patrz w e2e/nauka_3.cy.ts (można szukać po tej samej nazwie, co defaultowa wartość)
+  cy.route('GET', '/api/todos', seedData)
+  cy.visit('/')
+})
+
+
+
+
+
