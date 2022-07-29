@@ -11,7 +11,10 @@
  - Aby odpalić GUI cypress, trzeba wpisać `npx cypress open`, npx jest domyślnie w npm
  - w ten sposób stworzy się folder cypress, z features i support
  - Gdy wszytko poprawnie przeklikamy w GUI cypressa, to stworzy nam się dodatkow folder e2e
-
+ - Dodatkowo jest coś takiego https://docs.cypress.io/guides/tooling/typescript-support#Install-TypeScript
+   podobno jest to przydatne do pracy z typeSricptem, że IDE będzie rozpoznawał komendy i jak TypeScrip ma kompilować kos, czy coś i
+   jest to chyba jakoś związane z tym https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
+   ale nie rozumiem jeszcze co to jest tsconfig.json, wiec tylko to zaznaczam
 ## Więcej szczegółówna
  - https://docs.cypress.io/guides/getting-started/installing-cypress#What-you-ll-learn
  - https://docs.cypress.io/guides/getting-started/opening-the-app#Adding-npm-Scripts
